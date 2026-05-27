@@ -3,7 +3,7 @@ from flask_cors import CORS
 from flask import request
 import os
 
-app = Flask(__name__, static_folder="../frontend", static_url_path="")
+app = Flask(__name__, static_folder="../frontend", static_url_path="/static")
 CORS(app)
 
 from backend.routes.products import products_bp
@@ -23,19 +23,26 @@ app.register_blueprint(feed_bp)
 app.register_blueprint(backup_bp)
 
 
+UPLOAD_DIR = os.path.join(os.path.dirname(__file__), "..", "uploads")
+
+
 @app.route("/uploads/<path:filename>")
 def serve_upload(filename):
-    upload_dir = os.path.join(os.path.dirname(__file__), "..", "uploads")
-    return send_from_directory(upload_dir, filename)
+    return send_from_directory(UPLOAD_DIR, filename)
+
+
+FRONTEND_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend")
 
 
 @app.route("/")
 @app.route("/<path:path>")
 def serve_frontend(path=""):
-    file_path = os.path.join("../frontend", path or "index.html")
-    if os.path.exists(os.path.join(os.path.dirname(__file__), file_path)):
-        return send_from_directory("../frontend", path or "index.html")
-    return send_from_directory("../frontend", "index.html")
+    if not path:
+        return send_from_directory(FRONTEND_DIR, "index.html")
+    full_path = os.path.join(FRONTEND_DIR, path)
+    if os.path.exists(full_path) and not os.path.isdir(full_path):
+        return send_from_directory(FRONTEND_DIR, path)
+    return send_from_directory(FRONTEND_DIR, "index.html")
 
 
 @app.route("/api/health")
@@ -47,4 +54,4 @@ def health_check():
 def not_found(e):
     if request.path.startswith("/api/"):
         return jsonify({"error": "API endpoint not found"}), 404
-    return send_from_directory("../frontend", "index.html")
+    return send_from_directory(FRONTEND_DIR, "index.html")
