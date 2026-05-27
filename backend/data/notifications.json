@@ -1,0 +1,66 @@
+[
+  {
+    "notification_id": "50443aef",
+    "title": "Sale Completed",
+    "message": "Sale #95d2d3c4: N578.00 - CARD",
+    "type": "sale_update",
+    "created_at": "2026-05-27T17:56:23.662290",
+    "read": false
+  },
+  {
+    "notification_id": "1159bffe",
+    "title": "Sale Completed",
+    "message": "Sale #b0ac2a19: N27999.00 - CARD",
+    "type": "sale_update",
+    "created_at": "2026-05-27T17:56:03.509578",
+    "read": false
+  },
+  {
+    "notification_id": "ca927c5e",
+    "title": "Low Stock: Noise Cancelling Earbuds",
+    "message": "Noise Cancelling Earbuds has only 0 units remaining!",
+    "type": "low_stock",
+    "created_at": "2026-05-27T17:56:03.468021",
+    "read": false
+  },
+  {
+    "notification_id": "cecc3228",
+    "title": "Sale Completed",
+    "message": "Sale #ffc1a33c: N34.99 - CARD",
+    "type": "sale_update",
+    "created_at": "2026-05-27T17:38:20.819774",
+    "read": false
+  },
+  {
+    "notification_id": "1766e561",
+    "title": "Sale Completed",
+    "message": "Sale #cd8a0747: N69.98 - CASH",
+    "type": "sale_update",
+    "created_at": "2026-05-27T17:38:02.739401",
+    "read": false
+  },
+  {
+    "notification_id": "7e0ec6f4",
+    "title": "Sale Completed",
+    "message": "Sale #b7f901ad: $39.98 - MOBILE",
+    "type": "sale_update",
+    "created_at": "2026-05-27T17:17:17.284455",
+    "read": false
+  },
+  {
+    "notification_id": "a70ff146",
+    "title": "Sale Completed",
+    "message": "Sale #7cffee38: $119.96 - CASH",
+    "type": "sale_update",
+    "created_at": "2026-05-27T16:47:06.845890",
+    "read": false
+  },
+  {
+    "notification_id": "edd57c28",
+    "title": "Sale Completed",
+    "message": "Sale #534a2fb0: $204.97 - CASH",
+    "type": "sale_update",
+    "created_at": "2026-05-27T15:04:37.877676",
+    "read": false
+  }
+]

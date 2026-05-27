@@ -1,0 +1,666 @@
+[
+  {
+    "sale_id": "37cbef9e",
+    "items": [
+      {
+        "product_id": "1bdf5aa6",
+        "product_name": "Casual Hoodie",
+        "price": 1020.0,
+        "quantity": 3,
+        "subtotal": 3060.0,
+        "category": "Clothing"
+      },
+      {
+        "product_id": "9eb799ea",
+        "product_name": "Cookbook: 30-Min Meals",
+        "price": 510.0,
+        "quantity": 3,
+        "subtotal": 1530.0,
+        "category": "Books"
+      }
+    ],
+    "total": 4590.0,
+    "payment_method": "cash",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-20T11:54:23.565132",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "2078ed62",
+    "items": [
+      {
+        "product_id": "81e8e8c0",
+        "product_name": "Organic Coffee Beans 1lb",
+        "price": 323.0,
+        "quantity": 3,
+        "subtotal": 969.0,
+        "category": "Food & Beverages"
+      },
+      {
+        "product_id": "8424e4b9",
+        "product_name": "HDMI Cable 6ft",
+        "price": 221.0,
+        "quantity": 3,
+        "subtotal": 663.0,
+        "category": "Electronics"
+      }
+    ],
+    "total": 1632.0,
+    "payment_method": "cash",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-20T13:38:23.565269",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "012d138f",
+    "items": [
+      {
+        "product_id": "077f1310",
+        "product_name": "Green Tea Variety Pack",
+        "price": 255.0,
+        "quantity": 2,
+        "subtotal": 510.0,
+        "category": "Food & Beverages"
+      },
+      {
+        "product_id": "29bd6d84",
+        "product_name": "Sticky Notes 4x4 (5pk)",
+        "price": 136.0,
+        "quantity": 2,
+        "subtotal": 272.0,
+        "category": "Stationery"
+      }
+    ],
+    "total": 782.0,
+    "payment_method": "mobile",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-21T11:29:23.565349",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "91e4d411",
+    "items": [
+      {
+        "product_id": "e79f1028",
+        "product_name": "Honey 100% Pure 12oz",
+        "price": 272.0,
+        "quantity": 2,
+        "subtotal": 544.0,
+        "category": "Food & Beverages"
+      },
+      {
+        "product_id": "84fd2fae",
+        "product_name": "Reusable Straws Set (8)",
+        "price": 170.0,
+        "quantity": 1,
+        "subtotal": 170.0,
+        "category": "Home & Kitchen"
+      },
+      {
+        "product_id": "dc2c0cce",
+        "product_name": "Mechanical Keyboard RGB",
+        "price": 1530.0,
+        "quantity": 3,
+        "subtotal": 4590.0,
+        "category": "Electronics"
+      },
+      {
+        "product_id": "e2a85d8c",
+        "product_name": "Desktop Organizer",
+        "price": 425.0,
+        "quantity": 3,
+        "subtotal": 1275.0,
+        "category": "Stationery"
+      }
+    ],
+    "total": 6579.0,
+    "payment_method": "card",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-21T07:00:23.565421",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "5a18d10a",
+    "items": [
+      {
+        "product_id": "488b3946",
+        "product_name": "Washi Tape Set (10)",
+        "price": 153.0,
+        "quantity": 1,
+        "subtotal": 153.0,
+        "category": "Stationery"
+      }
+    ],
+    "total": 153.0,
+    "payment_method": "cash",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-22T05:32:23.565567",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "29ad2c15",
+    "items": [
+      {
+        "product_id": "b23506c1",
+        "product_name": "Dark Chocolate Bar 70%",
+        "price": 119.0,
+        "quantity": 2,
+        "subtotal": 238.0,
+        "category": "Food & Beverages"
+      },
+      {
+        "product_id": "d225d63f",
+        "product_name": "Planner 2026 Weekly",
+        "price": 340.0,
+        "quantity": 3,
+        "subtotal": 1020.0,
+        "category": "Stationery"
+      }
+    ],
+    "total": 1258.0,
+    "payment_method": "mobile",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-22T16:10:23.565621",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "383979fd",
+    "items": [
+      {
+        "product_id": "f76968aa",
+        "product_name": "Scented Candle Soy Jar",
+        "price": 289.0,
+        "quantity": 3,
+        "subtotal": 867.0,
+        "category": "Home & Kitchen"
+      },
+      {
+        "product_id": "ebdc74ad",
+        "product_name": "Portable Power Bank 20K",
+        "price": 850.0,
+        "quantity": 2,
+        "subtotal": 1700.0,
+        "category": "Electronics"
+      }
+    ],
+    "total": 2567.0,
+    "payment_method": "cash",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-22T11:59:23.565679",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "c66ca859",
+    "items": [
+      {
+        "product_id": "31484999",
+        "product_name": "Kitchen Timer Digital",
+        "price": 204.0,
+        "quantity": 1,
+        "subtotal": 204.0,
+        "category": "Home & Kitchen"
+      },
+      {
+        "product_id": "077f1310",
+        "product_name": "Green Tea Variety Pack",
+        "price": 255.0,
+        "quantity": 3,
+        "subtotal": 765.0,
+        "category": "Food & Beverages"
+      },
+      {
+        "product_id": "dc2c0cce",
+        "product_name": "Mechanical Keyboard RGB",
+        "price": 1530.0,
+        "quantity": 3,
+        "subtotal": 4590.0,
+        "category": "Electronics"
+      },
+      {
+        "product_id": "880cd1c0",
+        "product_name": "USB-C Hub 7-in-1",
+        "price": 595.0,
+        "quantity": 1,
+        "subtotal": 595.0,
+        "category": "Electronics"
+      }
+    ],
+    "total": 6154.0,
+    "payment_method": "card",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-22T10:46:23.565741",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "8a6d8c29",
+    "items": [
+      {
+        "product_id": "fb8213f5",
+        "product_name": "Collapsible Colander",
+        "price": 238.0,
+        "quantity": 2,
+        "subtotal": 476.0,
+        "category": "Home & Kitchen"
+      },
+      {
+        "product_id": "29bd6d84",
+        "product_name": "Sticky Notes 4x4 (5pk)",
+        "price": 136.0,
+        "quantity": 2,
+        "subtotal": 272.0,
+        "category": "Stationery"
+      },
+      {
+        "product_id": "1bdf5aa6",
+        "product_name": "Casual Hoodie",
+        "price": 1020.0,
+        "quantity": 1,
+        "subtotal": 1020.0,
+        "category": "Clothing"
+      },
+      {
+        "product_id": "e0f6acdf",
+        "product_name": "Leather Belt",
+        "price": 680.0,
+        "quantity": 3,
+        "subtotal": 2040.0,
+        "category": "Clothing"
+      }
+    ],
+    "total": 3808.0,
+    "payment_method": "cash",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-23T07:03:23.565814",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "56062034",
+    "items": [
+      {
+        "product_id": "e77e21c5",
+        "product_name": "Noise Cancelling Earbuds",
+        "price": 2210.0,
+        "quantity": 3,
+        "subtotal": 6630.0,
+        "category": "Electronics"
+      }
+    ],
+    "total": 6630.0,
+    "payment_method": "card",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-23T06:14:23.565879",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "5ef324d7",
+    "items": [
+      {
+        "product_id": "99725e92",
+        "product_name": "Whiteboard Markers (4)",
+        "price": 119.0,
+        "quantity": 1,
+        "subtotal": 119.0,
+        "category": "Stationery"
+      }
+    ],
+    "total": 119.0,
+    "payment_method": "cash",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-23T14:39:23.565922",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "fd2ad193",
+    "items": [
+      {
+        "product_id": "8fe02e14",
+        "product_name": "The Psychology of Money",
+        "price": 340.0,
+        "quantity": 2,
+        "subtotal": 680.0,
+        "category": "Books"
+      }
+    ],
+    "total": 680.0,
+    "payment_method": "cash",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-24T12:34:23.565972",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "fc840a55",
+    "items": [
+      {
+        "product_id": "b60c72d6",
+        "product_name": "Slim Fit Chinos",
+        "price": 850.0,
+        "quantity": 2,
+        "subtotal": 1700.0,
+        "category": "Clothing"
+      },
+      {
+        "product_id": "f8b96917",
+        "product_name": "Potholder & Oven Mitt Set",
+        "price": 255.0,
+        "quantity": 1,
+        "subtotal": 255.0,
+        "category": "Home & Kitchen"
+      },
+      {
+        "product_id": "8a41cea2",
+        "product_name": "Almond Butter 16oz",
+        "price": 221.0,
+        "quantity": 1,
+        "subtotal": 221.0,
+        "category": "Food & Beverages"
+      }
+    ],
+    "total": 2176.0,
+    "payment_method": "mobile",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-24T10:14:23.566023",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "e49e6cd5",
+    "items": [
+      {
+        "product_id": "42630572",
+        "product_name": "Formal Dress Shirt",
+        "price": 765.0,
+        "quantity": 2,
+        "subtotal": 1530.0,
+        "category": "Clothing"
+      },
+      {
+        "product_id": "ebdc74ad",
+        "product_name": "Portable Power Bank 20K",
+        "price": 850.0,
+        "quantity": 2,
+        "subtotal": 1700.0,
+        "category": "Electronics"
+      },
+      {
+        "product_id": "e2a85d8c",
+        "product_name": "Desktop Organizer",
+        "price": 425.0,
+        "quantity": 3,
+        "subtotal": 1275.0,
+        "category": "Stationery"
+      }
+    ],
+    "total": 4505.0,
+    "payment_method": "cash",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-25T05:47:23.566089",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "c3dad8c6",
+    "items": [
+      {
+        "product_id": "0eef636d",
+        "product_name": "Wireless Mouse Ergonomic",
+        "price": 510.0,
+        "quantity": 3,
+        "subtotal": 1530.0,
+        "category": "Electronics"
+      }
+    ],
+    "total": 1530.0,
+    "payment_method": "cash",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-25T05:58:23.566146",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "f9e70a5a",
+    "items": [
+      {
+        "product_id": "f8b96917",
+        "product_name": "Potholder & Oven Mitt Set",
+        "price": 255.0,
+        "quantity": 2,
+        "subtotal": 510.0,
+        "category": "Home & Kitchen"
+      },
+      {
+        "product_id": "ebdc74ad",
+        "product_name": "Portable Power Bank 20K",
+        "price": 850.0,
+        "quantity": 2,
+        "subtotal": 1700.0,
+        "category": "Electronics"
+      },
+      {
+        "product_id": "00a596f6",
+        "product_name": "Glass Meal Prep Set (5)",
+        "price": 595.0,
+        "quantity": 1,
+        "subtotal": 595.0,
+        "category": "Home & Kitchen"
+      },
+      {
+        "product_id": "7d5dd648",
+        "product_name": "Wool Beanie Hat",
+        "price": 340.0,
+        "quantity": 2,
+        "subtotal": 680.0,
+        "category": "Clothing"
+      }
+    ],
+    "total": 3485.0,
+    "payment_method": "mobile",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-25T10:15:23.566198",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "fcf82b5a",
+    "items": [
+      {
+        "product_id": "4ceb0043",
+        "product_name": "Laptop Sleeve 15.6\"",
+        "price": 425.0,
+        "quantity": 2,
+        "subtotal": 850.0,
+        "category": "Electronics"
+      }
+    ],
+    "total": 850.0,
+    "payment_method": "cash",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-25T16:57:23.566260",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "190989ce",
+    "items": [
+      {
+        "product_id": "db9ca356",
+        "product_name": "JavaScript: The Good Parts",
+        "price": 510.0,
+        "quantity": 3,
+        "subtotal": 1530.0,
+        "category": "Books"
+      },
+      {
+        "product_id": "d68bdc3e",
+        "product_name": "Cotton T-Shirt Pack (3)",
+        "price": 595.0,
+        "quantity": 3,
+        "subtotal": 1785.0,
+        "category": "Clothing"
+      },
+      {
+        "product_id": "99725e92",
+        "product_name": "Whiteboard Markers (4)",
+        "price": 119.0,
+        "quantity": 3,
+        "subtotal": 357.0,
+        "category": "Stationery"
+      },
+      {
+        "product_id": "8a41cea2",
+        "product_name": "Almond Butter 16oz",
+        "price": 221.0,
+        "quantity": 3,
+        "subtotal": 663.0,
+        "category": "Food & Beverages"
+      }
+    ],
+    "total": 4335.0,
+    "payment_method": "cash",
+    "cashier": "Admin",
+    "customer_id": "",
+    "timestamp": "2026-05-26T16:14:23.566325",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "b0ac2a19",
+    "items": [
+      {
+        "product_id": "d04e52d5",
+        "product_name": "Thinking Fast and Slow",
+        "price": 391.0,
+        "quantity": 2,
+        "subtotal": 782.0,
+        "category": "Books"
+      },
+      {
+        "product_id": "99e30101",
+        "product_name": "The Alchemist",
+        "price": 289.0,
+        "quantity": 1,
+        "subtotal": 289.0,
+        "category": "Books"
+      },
+      {
+        "product_id": "4d6aaeaf",
+        "product_name": "World Atlas 2026",
+        "price": 680.0,
+        "quantity": 1,
+        "subtotal": 680.0,
+        "category": "Books"
+      },
+      {
+        "product_id": "d68bdc3e",
+        "product_name": "Cotton T-Shirt Pack (3)",
+        "price": 595.0,
+        "quantity": 1,
+        "subtotal": 595.0,
+        "category": "Clothing"
+      },
+      {
+        "product_id": "d225d63f",
+        "product_name": "Planner 2026 Weekly",
+        "price": 340.0,
+        "quantity": 1,
+        "subtotal": 340.0,
+        "category": "Stationery"
+      },
+      {
+        "product_id": "0eef636d",
+        "product_name": "Wireless Mouse Ergonomic",
+        "price": 510.0,
+        "quantity": 1,
+        "subtotal": 510.0,
+        "category": "Electronics"
+      },
+      {
+        "product_id": "e77e21c5",
+        "product_name": "Noise Cancelling Earbuds",
+        "price": 2210.0,
+        "quantity": 9,
+        "subtotal": 19890.0,
+        "category": "Electronics"
+      },
+      {
+        "product_id": "4ceb0043",
+        "product_name": "Laptop Sleeve 15.6\"",
+        "price": 425.0,
+        "quantity": 7,
+        "subtotal": 2975.0,
+        "category": "Electronics"
+      },
+      {
+        "product_id": "7d5dd648",
+        "product_name": "Wool Beanie Hat",
+        "price": 340.0,
+        "quantity": 4,
+        "subtotal": 1360.0,
+        "category": "Clothing"
+      },
+      {
+        "product_id": "cdf5ff88",
+        "product_name": "Coconut Water 6pk",
+        "price": 289.0,
+        "quantity": 2,
+        "subtotal": 578.0,
+        "category": "Food & Beverages"
+      }
+    ],
+    "total": 27999.0,
+    "payment_method": "card",
+    "cashier": "Aliyah",
+    "customer_id": "",
+    "timestamp": "2026-05-27T17:56:03.457146",
+    "status": "completed",
+    "amount_tendered": 0.0
+  },
+  {
+    "sale_id": "95d2d3c4",
+    "items": [
+      {
+        "product_id": "cdf5ff88",
+        "product_name": "Coconut Water 6pk",
+        "price": 289.0,
+        "quantity": 2,
+        "subtotal": 578.0,
+        "category": "Food & Beverages"
+      }
+    ],
+    "total": 578.0,
+    "payment_method": "card",
+    "cashier": "Aliyah",
+    "customer_id": "",
+    "timestamp": "2026-05-27T17:56:23.629342",
+    "status": "completed",
+    "amount_tendered": 0.0
+  }
+]

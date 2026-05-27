@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+*.bak
+*.swp
+.DS_Store
+data/*.json
+data/backups/
+uploads/*
+!uploads/.gitkeep
+*.db
+.env

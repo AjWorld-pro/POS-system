@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerald POS - Inventory & Sales Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Screen -->
+        <div id="login-screen" class="screen active">
+            <div class="login-bg">
+                <div class="login-bg-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            <div class="login-container">
+                <div class="login-card">
+                    <div class="login-header">
+                        <div class="login-logo">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h1>Emerald POS</h1>
+                        <p>Smart Inventory & Point of Sale Management</p>
+                    </div>
+                    <div class="login-tabs">
+                        <button class="tab-btn active" data-tab="login">Sign In</button>
+                        <button class="tab-btn" data-tab="register">Create Account</button>
+                    </div>
+                    <form id="login-form" class="auth-form active">
+                        <div class="input-group">
+                            <div class="input-icon"><i class="fas fa-user"></i></div>
+                            <input type="text" id="login-username" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-icon"><i class="fas fa-lock"></i></div>
+                            <input type="password" id="login-password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+                        <p id="login-error" class="error-message"></p>
+                    </form>
+                    <form id="register-form" class="auth-form">
+                        <div class="input-group">
+                            <div class="input-icon"><i class="fas fa-user"></i></div>
+                            <input type="text" id="reg-username" placeholder="Choose a username" required>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-icon"><i class="fas fa-id-card"></i></div>
+                            <input type="text" id="reg-name" placeholder="Full name (optional)">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-icon"><i class="fas fa-envelope"></i></div>
+                            <input type="email" id="reg-email" placeholder="Email (optional)">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-icon"><i class="fas fa-lock"></i></div>
+                            <input type="password" id="reg-password" placeholder="Create a password" required>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full"><i class="fas fa-user-plus"></i> Create Account</button>
+                        <p id="register-error" class="error-message"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main App -->
+        <div id="main-app" class="screen">
+            <!-- Top Navigation -->
+            <header id="top-nav">
+                <div class="nav-left">
+                    <button id="sidebar-toggle" class="icon-btn"><i class="fas fa-bars"></i></button>
+                    <a href="#" class="logo"><i class="fas fa-cube"></i> Emerald</a>
+                </div>
+                <div class="nav-center">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="global-search" placeholder="Search products, categories..." autocomplete="off">
+                        <div id="search-suggestions" class="search-suggestions"></div>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <button id="cart-btn" class="icon-btn" title="Cart"><i class="fas fa-shopping-cart"></i><span id="nav-cart-count" class="badge">0</span></button>
+                    <button id="theme-toggle" class="icon-btn" title="Toggle theme"><i class="fas fa-moon"></i></button>
+                    <button id="notif-btn" class="icon-btn" title="Notifications">
+                        <i class="fas fa-bell"></i>
+                        <span id="notif-badge" class="badge">0</span>
+                    </button>
+                    <div class="user-menu" id="user-menu">
+                        <button class="user-btn"><span id="user-name">User</span> <i class="fas fa-chevron-down"></i></button>
+                        <div class="user-dropdown" id="user-dropdown">
+                            <a href="#" data-page="profile"><i class="fas fa-user"></i> Profile</a>
+                            <a href="#" data-page="settings"><i class="fas fa-cog"></i> Settings</a>
+                            <hr>
+                            <a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Notification Panel -->
+            <div id="notif-panel" class="side-panel right">
+                <div class="panel-header">
+                    <h3><i class="fas fa-bell"></i> Notifications</h3>
+                    <button id="close-notif" class="icon-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="panel-body" id="notif-list">
+                    <div class="notif-empty">No notifications</div>
+                </div>
+                <div class="panel-footer">
+                    <button id="mark-all-read" class="btn-sm">Mark All Read</button>
+                </div>
+            </div>
+
+            <!-- Main Layout -->
+            <div id="main-layout">
+                <!-- Left Sidebar -->
+                <aside id="left-sidebar">
+                    <nav class="sidebar-nav">
+                        <a href="#" class="nav-item active" data-page="feed"><i class="fas fa-rss"></i> <span>Feed</span></a>
+                        <a href="#" class="nav-item" data-page="inventory"><i class="fas fa-boxes"></i> <span>Inventory</span></a>
+                        <a href="#" class="nav-item" data-page="pos"><i class="fas fa-shopping-cart"></i> <span>POS</span></a>
+                        <a href="#" class="nav-item" data-page="sales"><i class="fas fa-receipt"></i> <span>Sales</span></a>
+                        <a href="#" class="nav-item" data-page="analytics"><i class="fas fa-chart-bar"></i> <span>Analytics</span></a>
+                        <hr>
+                        <div class="sidebar-section-title">Categories</div>
+                        <div id="sidebar-categories"></div>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main id="main-content">
+                    <div id="page-feed" class="page active"></div>
+                    <div id="page-inventory" class="page"></div>
+                    <div id="page-pos" class="page"></div>
+                    <div id="page-sales" class="page"></div>
+                    <div id="page-analytics" class="page"></div>
+                    <div id="page-profile" class="page"></div>
+                    <div id="page-settings" class="page"></div>
+                </main>
+
+                <!-- Right Sidebar -->
+                <aside id="right-sidebar">
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-fire"></i> Trending</h4>
+                        <div id="trending-list"></div>
+                    </div>
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-star"></i> Top Selling</h4>
+                        <div id="top-selling-list"></div>
+                    </div>
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Stock Alerts</h4>
+                        <div id="stock-alerts"></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="overlay">
+        <div class="overlay-content cart-panel">
+            <div class="panel-header">
+                <h3><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</h3>
+                <button id="close-cart" class="icon-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="panel-body" id="cart-items"></div>
+            <div class="panel-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total">₦0.00</span>
+                </div>
+                <div class="cart-actions">
+                    <button id="checkout-btn" class="btn-gold" style="flex:1"><i class="fas fa-credit-card"></i> Proceed to Payment</button>
+                    <button id="clear-cart" class="btn-secondary">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="overlay">
+        <div class="overlay-content modal-content">
+            <div class="panel-header">
+                <h3 id="modal-title"><i class="fas fa-box"></i> Add Product</h3>
+                <button id="close-modal" class="icon-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <form id="product-form">
+                <input type="hidden" id="product-id">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Product Name *</label>
+                        <input type="text" id="p-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Category *</label>
+                        <input type="text" id="p-category" list="category-list" required>
+                        <datalist id="category-list"></datalist>
+                    </div>
+                    <div class="form-group">
+                        <label>Price *</label>
+                        <input type="number" id="p-price" step="0.01" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Quantity</label>
+                        <input type="number" id="p-quantity" min="0" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Low Stock Threshold</label>
+                        <input type="number" id="p-threshold" min="1" value="5">
+                    </div>
+                    <div class="form-group">
+                        <label>Barcode</label>
+                        <input type="text" id="p-barcode" placeholder="Optional">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Description</label>
+                        <textarea id="p-description" rows="2" placeholder="Optional description"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Image URL</label>
+                        <input type="text" id="p-image" placeholder="Optional image URL">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary"><i class="fas fa-save"></i> Save</button>
+                    <button type="button" id="cancel-modal" class="btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="overlay">
+        <div class="overlay-content" style="max-width:480px">
+            <div class="panel-header">
+                <h3><i class="fas fa-credit-card"></i> Payment</h3>
+                <button id="close-payment" class="icon-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="payment-body" style="padding:16px">
+                <div id="payment-summary" style="margin-bottom:16px"></div>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <select id="pay-method" style="width:100%;padding:8px;border-radius:6px;border:1px solid var(--border)">
+                        <option value="card">Card</option>
+                        <option value="transfer">Transfer</option>
+                        <option value="pos">POS Terminal</option>
+                    </select>
+                </div>
+                <div id="processing-section" style="display:none;text-align:center;padding:20px">
+                    <i class="fas fa-spinner fa-spin fa-2x" style="color:var(--green)"></i>
+                    <p style="margin-top:10px;font-weight:500">Processing payment...</p>
+                </div>
+                <div style="display:flex;gap:8px;margin-top:16px">
+                    <button id="pay-cancel" class="btn-secondary" style="flex:1">Cancel</button>
+                    <button id="pay-now" class="btn-gold" style="flex:1"><i class="fas fa-check-circle"></i> Pay Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Receipt Modal -->
+    <div id="receipt-modal" class="overlay">
+        <div class="overlay-content receipt-content">
+            <div class="panel-header">
+                <h3><i class="fas fa-receipt"></i> Receipt</h3>
+                <button id="close-receipt" class="icon-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="receipt-content" class="receipt-text"></div>
+            <div style="display:flex;gap:8px;padding:12px 16px">
+                <button id="print-receipt" class="btn-primary" style="flex:1"><i class="fas fa-print"></i> Print</button>
+                <button id="download-pdf-receipt" class="btn-gold" style="flex:1"><i class="fas fa-file-pdf"></i> Download PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interest Preference Popup (Quora-style) -->
+    <div id="interest-popup" class="interest-popup-overlay">
+        <div class="interest-popup">
+            <div class="interest-popup-header">
+                <div class="popup-logo"><i class="fas fa-compass"></i></div>
+                <h2>Personalize Your Feed</h2>
+                <p>Select the product categories and stock topics you care about most. We'll tailor your dashboard to show what matters to you.</p>
+            </div>
+            <div class="interest-popup-body">
+                <div class="interest-grid" id="interest-grid"></div>
+            </div>
+            <div class="interest-popup-footer">
+                <button class="btn-gold" id="interest-save"><i class="fas fa-check"></i> Save Preferences</button>
+                <button class="btn-ghost" id="interest-skip"><i class="fas fa-forward"></i> Skip — Show All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast container -->
+    <div id="toast-container"></div>
+
+    <script src="js/services/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
